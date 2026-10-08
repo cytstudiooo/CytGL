@@ -1,0 +1,39 @@
+# Build output
+build/
+examples/STM32G431_CytStudio_Demo/build/
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+*.su
+*.d
+*.lst
+
+# PC test artefacts (snapshot frames written by the render tests)
+*.ppm
+*.bmp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+.cache/
+compile_commands.json
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Migration scratch directories
+_tr_baseline/
+_cgl_snapshot/

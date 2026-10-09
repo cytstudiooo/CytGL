@@ -21,6 +21,13 @@ CytGL 以水平条带渲染屏幕并逐条推送给面板，因此不需要帧�
 
 ---
 
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/smash.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/bullet.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/overlay.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/menu.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/trans.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/clock.gif)
+
 ## 1. 为什么采用条带渲染
 
 320×172 的 RGB565 帧缓冲占 110 KB。参考器件只有 32 KB RAM，因此"先在内存中合成整帧、再一次性传送"的常规做法无法采用。CytGL 改为把屏幕切成 `CGL_CFG_BAND_H` 行（默认 4 行）高的水平条带，在光栅化一条带的同时由总线移出上一条带。两条交替使用的条带缓冲各为 `CGL_CFG_SCREEN_W * CGL_CFG_BAND_H` 像素，整条流水线因此占用 5 KB 而不是 110 KB。

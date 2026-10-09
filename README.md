@@ -26,6 +26,13 @@ no hard-coded panel geometry.
 
 ---
 
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/smash.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/bullet.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/overlay.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/menu.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/trans.gif)
+![动图演示](./examples/STM32G431CBU6_CytStudio_Demo/docs/images/gifs/clock.gif)
+
 ## 1. Why band rendering
 
 A 320x172 RGB565 framebuffer occupies 110 KB. The reference part has 32 KB of RAM, so the
